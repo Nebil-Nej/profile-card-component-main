@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "kumbh sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/bg-pattern-top.svg) top right no-repeat,
+    url(./images/bg-pattern-bottom.svg) bottom left no-repeat, var(--Dark-cyan);
+}
+
+.container {
+    width: 300px;
+    border-radius: 20px;
+    background-image: url(./images/bg-pattern-card.svg);
+}
+
+.profile-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: 50%;
+    margin-bottom: 30px;
+}
+
+.profile-name-age {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.profile-name-age h1 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 10px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.profile-name-age h2 {
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    font-size: 18px;
+}
+
+.profile-section p {
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* .half-white-back {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 60px;
+    z-index: 1;
+} */
+
+.profile-details-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 0px 0px 20px 20px;
+}
+
+hr {
+    color: var(--Dark-gray);
+}
+
+.profile-info-section h2 {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.profile-info-section p {
+    text-align: center;
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+}
